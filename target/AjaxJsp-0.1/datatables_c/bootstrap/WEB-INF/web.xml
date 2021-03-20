@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AuthAdmin</servlet-name>
+        <servlet-class>pe.edu.idat.ajaxjsp.controller.AuthAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPostServlet</servlet-name>
+        <servlet-class>pe.edu.idat.ajaxjsp.controller.AddPostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Prod_Dia_Control</servlet-name>
+        <servlet-class>pe.edu.idat.ajaxjsp.controller.Prod_Dia_Control</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthAdmin</servlet-name>
+        <url-pattern>/AuthAdmin/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPostServlet</servlet-name>
+        <url-pattern>/AddPostServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Prod_Dia_Control</servlet-name>
+        <url-pattern>/Prod_Dia_Control</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
